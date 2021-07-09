@@ -1,0 +1,27 @@
+# Create Repo for the web app:
+
+aws codecommit create-repository --repository-name BirdSoundReco
+git clone https://github.com/CalenDario13/bird_sound_web_app
+cd bird_sound_web_app/
+
+sudo yum install git-subtree -y
+git subtree split -P webapp -b BirdSoundApp
+
+mkdir ../web_app && cd web_app
+git init
+
+git pull ../bird_sound_web_app BirdSoundApp
+git remote add origin codecommit://BirdSoundReco
+git push -u origin master
+
+rm -rf  ../bird_sound_web_app
+
+# Cognito Implementation:
+
+npm install -g @aws-amplify/cli
+echo '[profile default]' > ~/.aws/config
+
+cd web_app
+amplify init
+#birdSoundApp (the name of project)
+
