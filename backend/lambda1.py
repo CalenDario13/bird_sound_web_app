@@ -1,7 +1,8 @@
 import json, boto3, base64, io
 from pydub import AudioSegment
 
-
+endpoint = 'is-thriller-movie-ep--2019-02-21-18-30-19'
+ 
 SR = 32000
 SIGNAL_LENGTH = 5 
 SPEC_SHAPE = (48, 128) 
@@ -25,12 +26,15 @@ def format_response(message, status_code):
         }
  
 def lambda_handler(event, context):
-
-    audio = event['content']
-    audio = base64.b64decode(audio)
+    
+    # Extract Audio and Decode:
+    body = json.loads(event['body'])
+    audio = base64.b64decode(body['data'].replace('data:audio/mpeg;base64,', '')) 
+    # Transform Audio to Array:
     audio = AudioSegment.from_file(io.BytesIO(audio)).set_channels(1).set_frame_rate(SR)
     audio = audio.get_array_of_samples()[:DURATION].tolist()
-
+    
+    # Work with the Response:
     lam = boto3.client('lambda')
     invoke_response = lam.invoke(FunctionName="scipy",
                                            InvocationType='RequestResponse',
@@ -40,4 +44,4 @@ def lambda_handler(event, context):
     response = runtime.invoke_endpoint(EndpointName=endpoint, ContentType='application/json', Body=stft)
     pred = response['Body'].read().decode()
     pred = json.loads(pred)['predictions']
-    return format_response(json.dumps(pred), 200)     
+    return format_response(json.dumps(pred), 200)    
