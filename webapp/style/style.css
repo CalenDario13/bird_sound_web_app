@@ -23,11 +23,11 @@
     padding-top: 10px;
   }
 
-  span {
-    font-size: 120px;
-    font-weight: bold;
-    color: coral;
-  }
+span {
+  font-size: 60px;
+  font-weight: bold;
+  color: coral;
+}
 
 footer {
   position: fixed;
@@ -61,11 +61,7 @@ footer {
 	top:1px;
 }
  
-span {
-	font-size: 120%;
-	font-weight: bold;
-}
- 
+
 .input-container {
 	text-align: center;
   }
