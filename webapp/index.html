@@ -17,17 +17,36 @@
     <div class="h1", id = "title">
         <h1>Bird Sound Recognition</h1>
     </div>
+
+    <div class="container">
+      
+      <div class="bird-container bird-container--one">
+         <div class="bird bird--one"></div>
+      </div>
+      
+      <div class="bird-container bird-container--two">
+         <div class="bird bird--two"></div>
+      </div>
+      
+      <div class="bird-container bird-container--three">
+         <div class="bird bird--three"></div>
+      </div>
+      
+      <div class="bird-container bird-container--four">
+         <div class="bird bird--four"></div>
+      </div>
    
     <div class="input-container">
         
         <input type="file" value="Load a Bird Sound" id="loadButton" class="buttons" accept="audio/*">
-        
+        <br>
+        <br>
         <div class="playerConsole">
         <audio class="player", id="myAudio"></audio>  
         <button id="play", class="buttons">Play</button>
         <progress id="seekbar" value="0" max="1" step="any" style="width:400px;"></progress>
         </div>
-    
+        <br>
         <input type="submit" value="Check Bird's Name" id="lambdaConnect" class="buttons">
         <br>
         <br>
@@ -37,13 +56,6 @@
         <span id="responseProb", class='textSpace'></span>
      </div>
      
-
-    <footer>
-        <div class="copyright">
-            <p>™ & &copy; 2021 Sound Bird Recognition. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 
 </html>
-
