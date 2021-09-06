@@ -1,4 +1,4 @@
-Final project for the course Cloud Computing. 
+# Final project for the course Cloud Computing. 
 
 ![Architecture](/img/architecture.jpg)
 
