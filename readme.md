@@ -1,4 +1,8 @@
 Final project for the course Cloud Computing. 
+
+![Architecture](/img/Web App Reference Architecture.jpg)
+
+
 * **lambda_functions** contains the codes used to implement the two lambda functions and the tests used.
 * **lambda_layer_ffmpeg** is the layer that was installed on one lambda function.
 * **sage_maker** contains all the code used for the model training and deployment.
