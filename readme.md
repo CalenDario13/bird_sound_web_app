@@ -1,6 +1,9 @@
-Final project for the course Cloud Computing. 
+# Final project for the course Cloud Computing
 
-![Architecture](/img/Web\ App\ Reference\ Architecture.jpg)
+We built a Web-App using AWS technologies. The aim of the Web-App is to classify bird species from their sound. The user can upload its sound on a static and serverless Web-App, which exploits AWS technologies to process (Lambda) and classify (SageMaker) it. The web site is available [HERE](http://bird-sound-app.s3-website-us-east-1.amazonaws.com).
+The Web-App is hosted on a public S3 bucket. The interaction between the Web-App and the back-end is made possible by the API Gateway, through which is possible to call the main Lambda. Then it sends a request to SageMaker that returns as response the bird to which corresponds that sound with the highest probability.
+
+![Architecture](/img/architecture.jpg)
 
 
 * **lambda_functions** contains the codes used to implement the two lambda functions and the tests used.
