@@ -1,6 +1,6 @@
 Final project for the course Cloud Computing. 
 
-![Architecture](/img/Web App Reference Architecture.jpg)
+![Architecture](/img/Web\ App\ Reference\ Architecture.jpg)
 
 
 * **lambda_functions** contains the codes used to implement the two lambda functions and the tests used.
