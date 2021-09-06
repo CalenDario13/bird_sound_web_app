@@ -1,0 +1,72 @@
+"ScalingActivities": [
+        {
+            "ActivityId": "b409e14d-8f17-409e-aacc-b7c3526094c5",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 1.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmLow-8d96cf7c-503b-4435-908d-03674788edac in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T12:26:55.845000+00:00",
+            "EndTime": "2021-09-05T12:27:31.348000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 1. Change successfully fulfilled by sagemaker."
+        },
+        {
+            "ActivityId": "9bb260f3-7001-437f-8d06-8af247103823",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 2.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmLow-8d96cf7c-503b-4435-908d-03674788edac in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T12:20:55.934000+00:00",
+            "EndTime": "2021-09-05T12:21:30.308000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 2. Change successfully fulfilled by sagemaker."
+        },
+        {
+            "ActivityId": "26a2e4ff-6113-4fd4-854d-5e2aa4d7b8e6",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 3.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmLow-8d96cf7c-503b-4435-908d-03674788edac in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T12:14:55.826000+00:00",
+            "EndTime": "2021-09-05T12:15:31.258000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 3. Change successfully fulfilled by sagemaker."
+        },
+        {
+            "ActivityId": "007d441c-414b-47c2-b2ea-b3f43636173d",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 4.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmHigh-83e9c70b-5238-418d-950a-2797182f5370 in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T11:45:50.675000+00:00",
+            "EndTime": "2021-09-05T11:47:38.117000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 4. Change successfully fulfilled by sagemaker."
+        },
+        {
+            "ActivityId": "7ee722fc-a0ba-4aeb-a878-879f78d53503",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 3.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmHigh-83e9c70b-5238-418d-950a-2797182f5370 in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T11:35:50.690000+00:00",
+            "EndTime": "2021-09-05T11:39:14.515000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 3. Change successfully fulfilled by sagemaker."
+        },
+        {
+            "ActivityId": "5e2e0aa6-b50f-4cc0-9efa-b0041e0c8048",
+            "ServiceNamespace": "sagemaker",
+            "ResourceId": "endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic",
+            "ScalableDimension": "sagemaker:variant:DesiredInstanceCount",
+            "Description": "Setting desired instance count to 2.",
+            "Cause": "monitor alarm TargetTracking-endpoint/tensorflow-inference-2021-09-05-09-27-16-105/variant/AllTraffic-AlarmHigh-83e9c70b-5238-418d-950a-2797182f5370 in state ALARM triggered policy CPUUtil-ScalingPolicy",
+            "StartTime": "2021-09-05T11:25:50.708000+00:00",
+            "EndTime": "2021-09-05T11:29:14.555000+00:00",
+            "StatusCode": "Successful",
+            "StatusMessage": "Successfully set desired instance count to 2. Change successfully fulfilled by sagemaker."
